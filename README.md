@@ -1,3 +1,9 @@
+# soichisumi-sandbox/aws-glue-libs
+
+AWS Glueのローカル実行検証用リポジトリ
+
+./bin/gluesparksubmit --conf spark.hadoop.dynamodb.endpoint=http://localhost:4566 --conf spark.hadoop.fs.s3a.endpoint=http://localhost:4566 --conf spark.hadoop.fs.s3a.path.style.access=true --conf spark.hadoop.fs.s3a.path.style.access=true ./glue-sandbox/glue_sandbox/awsglue-sample.py --JOB_NAME='dummy'
+
 # aws-glue-libs
 This repository contains:
  * `awsglue` - the Python libary you can use to author [AWS Glue](https://aws.amazon.com/glue) ETL job. This library extends [Apache Spark](https://spark.apache.org/) with additional data types and operations for ETL workflows. It's an interface for Glue ETL library in Python.
